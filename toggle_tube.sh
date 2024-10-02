@@ -1,4 +1,6 @@
 #! /usr/bin/bash
 
-wget -q -O/dev/null http://192.168.1.49/relay/1?turn=toggle
+shelly_ip=
+
+wget -q -O/dev/null "http://$shelly_ip/relay/1?turn=toggle"
 sleep 2
